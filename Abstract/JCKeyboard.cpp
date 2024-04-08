@@ -11,8 +11,8 @@
 void JCKeyboard::input() {
     std::cout << "-[JCKeyboard input]" << std::endl;
 }
-
-JCKeyboard::JCKeyboard() {
+// 使用初始化列表来初始化字段
+JCKeyboard::JCKeyboard(bool enable, bool wired): enable(enable), isWired(wired) {
     
 }
 

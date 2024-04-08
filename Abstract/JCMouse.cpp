@@ -11,3 +11,9 @@
 void JCMouse::input() {
     std::cout << "-[JCMouse input]" << std::endl;
 }
+
+JCMouse::JCMouse(const JCMouse &mouse) {
+    ptr = new int;
+    *ptr = *mouse.ptr;
+    brand = mouse.brand;
+}
