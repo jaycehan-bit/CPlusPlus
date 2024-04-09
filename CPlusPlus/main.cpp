@@ -6,9 +6,11 @@
 //
 
 #include <iostream>
+#include <thread>
 #include "JCKeyboard.hpp"
 #include "JCMouse.hpp"
 #include "JCConst.hpp"
+#include "JCThread.hpp"
 
 static void abstractMethod() {
     JCKeyboard keyboard;
@@ -33,8 +35,17 @@ static void constMethod() {
     constTextBlock.description();
 }
 
+static void threadFunction() {
+    JCThread thread;
+    thread.run();
+}
+
 int main(int argc, const char * argv[]) {
     abstractMethod();
     constMethod();
+    threadFunction();
+    while (1) {
+        
+    }
     return 0;
 }
