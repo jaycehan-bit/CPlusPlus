@@ -17,3 +17,7 @@ JCMouse::JCMouse(const JCMouse &mouse) {
     *ptr = *mouse.ptr;
     brand = mouse.brand;
 }
+
+JCMouse::JCMouse() {
+    
+}

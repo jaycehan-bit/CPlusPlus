@@ -14,6 +14,7 @@
 
 class JCMouse {
 public:
+    JCMouse();
     // 拷贝构造函数
     JCMouse(const JCMouse &mouse);
     void input();

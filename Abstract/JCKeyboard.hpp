@@ -14,6 +14,7 @@
 class JCKeyboard : virtual Input {
     
 public:
+    JCKeyboard();
     JCKeyboard(bool enable, bool wired);
     ~JCKeyboard();
     void input();
