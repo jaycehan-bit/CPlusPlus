@@ -10,6 +10,7 @@
 		4E71CF392BB1A7E200CA980B /* JCTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E71CF372BB1A7E200CA980B /* JCTemplate.cpp */; };
 		4E7351C82BC52A4700BB0C1F /* JCStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E7351C62BC52A4700BB0C1F /* JCStack.cpp */; };
 		4E73C3512BC54BB700BB0C1F /* JCThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E73C34F2BC54BB700BB0C1F /* JCThread.cpp */; };
+		4EA804222BD6B26500B874A3 /* JCDecltype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EA804202BD6B26500B874A3 /* JCDecltype.cpp */; };
 		4EC336472BAB169500FCDE67 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EC336462BAB169500FCDE67 /* main.cpp */; };
 		4EC336512BAB180900FCDE67 /* JCKeyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EC3364F2BAB178F00FCDE67 /* JCKeyboard.cpp */; };
 		4EC336542BAB19E500FCDE67 /* JCMouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EC336522BAB19E500FCDE67 /* JCMouse.cpp */; };
@@ -35,6 +36,9 @@
 		4E7351C72BC52A4700BB0C1F /* JCStack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = JCStack.hpp; sourceTree = "<group>"; };
 		4E73C34F2BC54BB700BB0C1F /* JCThread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JCThread.cpp; sourceTree = "<group>"; };
 		4E73C3502BC54BB700BB0C1F /* JCThread.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = JCThread.hpp; sourceTree = "<group>"; };
+		4EA8041E2BD6B03600B874A3 /* JCBaseInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCBaseInterface.h; sourceTree = "<group>"; };
+		4EA804202BD6B26500B874A3 /* JCDecltype.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JCDecltype.cpp; sourceTree = "<group>"; };
+		4EA804212BD6B26500B874A3 /* JCDecltype.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = JCDecltype.hpp; sourceTree = "<group>"; };
 		4EC336432BAB169500FCDE67 /* CPlusPlus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPlusPlus; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC336462BAB169500FCDE67 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4EC3364E2BAB172200FCDE67 /* Input.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Input.hpp; sourceTree = "<group>"; };
@@ -57,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E3F1AE02BD6245E00938B48 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4EA8041E2BD6B03600B874A3 /* JCBaseInterface.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		4E3F60EC2BAD69B300159B1B /* Template */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +89,20 @@
 			path = Thread;
 			sourceTree = "<group>";
 		};
+		4EA8041F2BD6B24C00B874A3 /* Decltype */ = {
+			isa = PBXGroup;
+			children = (
+				4EA804202BD6B26500B874A3 /* JCDecltype.cpp */,
+				4EA804212BD6B26500B874A3 /* JCDecltype.hpp */,
+			);
+			path = Decltype;
+			sourceTree = "<group>";
+		};
 		4EC3363A2BAB169500FCDE67 = {
 			isa = PBXGroup;
 			children = (
+				4EA8041F2BD6B24C00B874A3 /* Decltype */,
+				4E3F1AE02BD6245E00938B48 /* Base */,
 				4E73C34E2BC54BA600BB0C1F /* Thread */,
 				4E3F60EC2BAD69B300159B1B /* Template */,
 				4EC336562BAB29D600FCDE67 /* Const */,
@@ -189,6 +212,7 @@
 				4EC336542BAB19E500FCDE67 /* JCMouse.cpp in Sources */,
 				4EC336512BAB180900FCDE67 /* JCKeyboard.cpp in Sources */,
 				4E73C3512BC54BB700BB0C1F /* JCThread.cpp in Sources */,
+				4EA804222BD6B26500B874A3 /* JCDecltype.cpp in Sources */,
 				4E7351C82BC52A4700BB0C1F /* JCStack.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

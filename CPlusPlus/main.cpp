@@ -7,6 +7,8 @@
 
 #include <iostream>
 #include <thread>
+#include "string"
+#include "JCDecltype.hpp"
 #include "JCKeyboard.hpp"
 #include "JCMouse.hpp"
 #include "JCConst.hpp"
@@ -35,6 +37,11 @@ static void constMethod() {
     constTextBlock.description();
 }
 
+static void decltypeFunction() {
+    JCDecltype decltypeObj = JCDecltype();
+    decltypeObj.run(std::map<int, std::string>());
+}
+
 static void threadFunction() {
     JCThread thread;
     thread.run();
@@ -43,6 +50,7 @@ static void threadFunction() {
 int main(int argc, const char * argv[]) {
     abstractMethod();
     constMethod();
+    decltypeFunction();
     threadFunction();
     while (1) {
         
