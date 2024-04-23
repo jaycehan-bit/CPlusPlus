@@ -7,11 +7,12 @@
 
 #include <iostream>
 #include <thread>
-#include "string"
+#include <string>
+#include "JCConst.hpp"
 #include "JCDecltype.hpp"
 #include "JCKeyboard.hpp"
 #include "JCMouse.hpp"
-#include "JCConst.hpp"
+#include "JCSmartPointer.hpp"
 #include "JCThread.hpp"
 
 static void abstractMethod() {
@@ -47,13 +48,18 @@ static void threadFunction() {
     thread.run();
 }
 
+static void smartPointerFunction() {
+    JCSmartPointer *smartPointer = new JCSmartPointer();
+    smartPointer->run(std::map<int, std::string>());
+}
+
 int main(int argc, const char * argv[]) {
-    abstractMethod();
-    constMethod();
-    decltypeFunction();
-    threadFunction();
-    while (1) {
-        
-    }
+//    abstractMethod();
+//    constMethod();
+//    decltypeFunction();
+//    threadFunction();
+    smartPointerFunction();
+    
+    while (1) {}
     return 0;
 }

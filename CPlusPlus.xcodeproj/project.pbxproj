@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E59A01C2BD7F3FE00D1C498 /* JCSmartPointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E59A01A2BD7F3FE00D1C498 /* JCSmartPointer.cpp */; };
 		4E71CF392BB1A7E200CA980B /* JCTemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E71CF372BB1A7E200CA980B /* JCTemplate.cpp */; };
 		4E7351C82BC52A4700BB0C1F /* JCStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E7351C62BC52A4700BB0C1F /* JCStack.cpp */; };
 		4E73C3512BC54BB700BB0C1F /* JCThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E73C34F2BC54BB700BB0C1F /* JCThread.cpp */; };
@@ -30,6 +31,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E59A01A2BD7F3FE00D1C498 /* JCSmartPointer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JCSmartPointer.cpp; sourceTree = "<group>"; };
+		4E59A01B2BD7F3FE00D1C498 /* JCSmartPointer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = JCSmartPointer.hpp; sourceTree = "<group>"; };
 		4E71CF372BB1A7E200CA980B /* JCTemplate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JCTemplate.cpp; sourceTree = "<group>"; };
 		4E71CF382BB1A7E200CA980B /* JCTemplate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = JCTemplate.hpp; sourceTree = "<group>"; };
 		4E7351C62BC52A4700BB0C1F /* JCStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JCStack.cpp; sourceTree = "<group>"; };
@@ -80,6 +83,15 @@
 			path = Template;
 			sourceTree = "<group>";
 		};
+		4E59A0192BD7F3DE00D1C498 /* SmartPointer */ = {
+			isa = PBXGroup;
+			children = (
+				4E59A01A2BD7F3FE00D1C498 /* JCSmartPointer.cpp */,
+				4E59A01B2BD7F3FE00D1C498 /* JCSmartPointer.hpp */,
+			);
+			path = SmartPointer;
+			sourceTree = "<group>";
+		};
 		4E73C34E2BC54BA600BB0C1F /* Thread */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,7 @@
 		4EC3363A2BAB169500FCDE67 = {
 			isa = PBXGroup;
 			children = (
+				4E59A0192BD7F3DE00D1C498 /* SmartPointer */,
 				4EA8041F2BD6B24C00B874A3 /* Decltype */,
 				4E3F1AE02BD6245E00938B48 /* Base */,
 				4E73C34E2BC54BA600BB0C1F /* Thread */,
@@ -206,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E59A01C2BD7F3FE00D1C498 /* JCSmartPointer.cpp in Sources */,
 				4EC336592BAB29E800FCDE67 /* JCConst.cpp in Sources */,
 				4EC336472BAB169500FCDE67 /* main.cpp in Sources */,
 				4E71CF392BB1A7E200CA980B /* JCTemplate.cpp in Sources */,
